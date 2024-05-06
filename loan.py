@@ -1,5 +1,8 @@
 import streamlit as st
-
+st.set_page_config(
+    page_title="bbot_loan",
+    page_icon="💸",
+)
 def update_credit_score_value():
     st.markdown('<style>div[data-baseweb="slider"] > div > div > div { background-color: #adb151 !important; }</style>', unsafe_allow_html=True)
     credit_score_value = st.slider("Credit Score", min_value=100, max_value=700, step=1, key='credit_score')
